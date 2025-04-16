@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jaro_figma"
+        android:text="Score: 0"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 30"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jaro_figma"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <!-- Using hole image as the background for each ImageView -->
+        <ImageView
+            android:id="@+id/hole1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <ImageView
+            android:id="@+id/hole2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <ImageView
+            android:id="@+id/hole3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <ImageView
+            android:id="@+id/hole4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <ImageView
+            android:id="@+id/hole5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <ImageView
+            android:id="@+id/hole6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <ImageView
+            android:id="@+id/hole7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <ImageView
+            android:id="@+id/hole8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <ImageView
+            android:id="@+id/hole9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hole"
+            android:onClick="onHoleClicked" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:backgroundTint="#C9E362"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jaro_figma" />
+
+    </GridLayout>
+</LinearLayout>
